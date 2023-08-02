@@ -101,7 +101,7 @@ const Footer3 = () => {
           <p>
             Copyright @2023,{" "}
             <Link legacyBehavior href="/">
-              <a>Ygency</a>
+              <a>OYODIGI</a>
             </Link>{" "}
             All Rights Reserved
           </p>

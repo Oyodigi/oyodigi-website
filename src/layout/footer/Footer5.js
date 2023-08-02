@@ -58,7 +58,7 @@ const Footer5 = () => {
             <div className="col-lg-6">
               <div className="footer-copyright-text wow fadeInUp delay-0-2s">
                 <p>
-                  Copyright @2023, <a href="index.html">Ygency</a> All Rights
+                  Copyright @2023, <a href="index.html">OYODIGI</a> All Rights
                   Reserved
                 </p>
               </div>

@@ -18,7 +18,7 @@ const Index2 = () => {
       >
         <div className="container">
           <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-          A Stunning Website Designed Just for You!
+          Own Your Own Website. Pay Small Small.
 
             <span className="arrow">
               <img
@@ -32,9 +32,8 @@ const Index2 = () => {
             <div className="col-xl-3 col-lg-4">
               <div className="hero-two-content mb-50 wow fadeInRight delay-0-2s">
                 <p>
-                Get ready to make a remarkable online presence with our bespoke website design starting 
-                from as low as ₦3,200 per month. And the best part? You can kickstart your online journey
-                 with just a small initial deposit of ₦5,000.
+                Everything You Need in One Package! We've got all the essentials covered in our all-inclusive package,
+                 tailored to fulfill your unique needs.
 
                 </p>
                 <img
@@ -80,14 +79,15 @@ const Index2 = () => {
               <div className="about-content">
                 <div className="section-title mb-40 wow fadeInUp delay-0-2s">
                   <span className="sub-title mb-15">About Oyodigi</span>
-                  <h2>We’re Award-winning Web Development Agency</h2>
+                  <h2>A Stunning Website Designed Just for You!</h2>
                 </div>
                 <div className="text-left-border mt-60 mb-65 wow fadeInUp delay-0-2s">
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptat
-                    emey accusantium doloremque laudantium totam aperiam eaque
-                    quabillo inventore veritatisey quasi architecto beatae
-                    dictasunt
+                  Get ready to make a remarkable online presence with our bespoke website design starting 
+                  from as low as ₦3,200 per month. And the best part? You can kickstart your online journey 
+                  with just a small initial deposit of ₦5,000.
+
+
                   </p>
                 </div>
                 <div className="about-counter">
@@ -136,34 +136,34 @@ const Index2 = () => {
             <span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Design</b>
+                <b>Clean Design</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Product Design</b>
+                <b>Fast</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
+                <b>Reliable</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>SEO Optimization</b>
+                <b>Budget-Friendly</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>UX/UI Strategy</b>
+                <b>Pay as you go</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Graphics</b>
+                <b>SEO</b>
               </span>
             </span>
           </div>
         </div>
       </div>
       {/* Headline Area end */}
-      {/* Project Timeline-two Area start */}
+      {/* Project Timeline-two Area start 
       <section className="project-timeline-two-area pt-130 rpt-100 rel z-1">
         <div className="container container-1290">
           <div className="row">
@@ -320,18 +320,18 @@ const Index2 = () => {
               <div className="why-choose-us-content">
                 <div className="section-title mb-60 wow fadeInUp delay-0-2s">
                   <span className="sub-title mb-15">Why Choose Us</span>
-                  <h2>Web Design Company That You Can Trust</h2>
+                  <h2>Here is our offer to you:</h2>
                 </div>
                 <div className="row gap-60">
                   <div className="col-md-6">
                     <div className="why-choose-item wow fadeInUp delay-0-2s">
                       <div className="why-choose-header">
                         <i className="far fa-chevron-right" />
-                        <h5>Competitive rates</h5>
+                        <h5>A Premium Website</h5>
                       </div>
                       <p>
-                        We use strategic marketing tactics that have been proven
-                        programming
+                      We design a stunning website that perfectly embodies your brand
+                       and captures your audience's attention.
                       </p>
                     </div>
                   </div>
@@ -339,23 +339,21 @@ const Index2 = () => {
                     <div className="why-choose-item wow fadeInUp delay-0-3s">
                       <div className="why-choose-header">
                         <i className="far fa-chevron-right" />
-                        <h5>Premium Development</h5>
+                        <h5>1-Year Domain Registration</h5>
                       </div>
                       <p>
-                        Sed perspiciatis unde omnie natue site voluptatem
-                        accusan doloremque
-                      </p>
+                      Establish your online identity with a domain that truly represents your business.</p>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="why-choose-item wow fadeInUp delay-0-2s">
                       <div className="why-choose-header">
                         <i className="far fa-chevron-right" />
-                        <h5>No contracts needed</h5>
+                        <h5>1-Year Web Hosting</h5>
                       </div>
                       <p>
-                        You can increase, pause or stop our services at any time
-                        leaving
+                      Our reliable hosting services ensure your website stays
+                       up and running smoothly, 99.9% of the time.
                       </p>
                     </div>
                   </div>
@@ -363,11 +361,10 @@ const Index2 = () => {
                     <div className="why-choose-item wow fadeInUp delay-0-3s">
                       <div className="why-choose-header">
                         <i className="far fa-chevron-right" />
-                        <h5>Retina Ready &amp; Flexible</h5>
+                        <h5>10-Year SSL Certificate</h5>
                       </div>
                       <p>
-                        Devices show more pixels square inch resulting sharperes
-                        images Content
+                      Gain your customers' trust and protect their sensitive information with a secure SSL certificate.
                       </p>
                     </div>
                   </div>
@@ -417,19 +414,19 @@ const Index2 = () => {
                 <div className="icon">
                   <i className="flaticon-abstract" />
                 </div>
-                <h5>Regular Package</h5>
+                <h5>Basic Plan</h5>
                 <span className="price-text">
-                  <span className="before">$</span>
-                  <span className="price">18.3</span>{" "}
+                  <span className="before">₦</span>
+                  <span className="price">3,500</span>{" "}
                   <span className="after">/per month</span>
                 </span>
                 <ul className="list-style-one">
-                  <li>Landing Page Design</li>
-                  <li>Web Development</li>
-                  <li>SEO Optimizations</li>
-                  <li>Mobile Applications Design</li>
-                  <li>Quality Assurance</li>
-                  <li>Customs Services</li>
+                  <li>Initial Deposit: ₦5,000</li>
+                  <li>Buy Back Plan: ₦100K</li>
+                  <li>Domain</li>
+                  <li>Web Hosting</li>
+                  <li>SEO</li>
+                  <li>Development</li>
                 </ul>
                 <Link legacyBehavior href="/pricing">
                   <a className="theme-btn w-100">
@@ -450,19 +447,20 @@ const Index2 = () => {
                 <div className="icon">
                   <i className="flaticon-liquid" />
                 </div>
-                <h5>Silver Package</h5>
+                <h5>Premium Plan</h5>
                 <span className="price-text">
-                  <span className="before">$</span>
-                  <span className="price">49.3</span>{" "}
+                  <span className="before">₦</span>
+                  <span className="price">6,000</span>{" "}
                   <span className="after">/per month</span>
                 </span>
                 <ul className="list-style-one">
-                  <li>Landing Page Design</li>
-                  <li>Web Development</li>
-                  <li>SEO Optimizations</li>
-                  <li>Mobile Applications Design</li>
-                  <li>Quality Assurance</li>
-                  <li>Customs Services</li>
+                  <li>Initial Deposit: ₦10,000</li>
+                  <li>Buy Back Plan: ₦150K</li>
+                  <li>SEO Optimisations</li>
+                  <li>Design</li>
+                  <li>Domain</li>
+                  <li>Hosting</li>
+                  <li>Development</li>
                 </ul>
                 <Link legacyBehavior href="/pricing">
                   <a className="theme-btn w-100">
@@ -476,19 +474,21 @@ const Index2 = () => {
                 <div className="icon">
                   <i className="flaticon-petals" />
                 </div>
-                <h5>Golden Package</h5>
+                <h5>VIP Plan</h5>
                 <span className="price-text">
-                  <span className="before">$</span>
-                  <span className="price">98.3</span>{" "}
+                  <span className="before">₦</span>
+                  <span className="price">8,000</span>{" "}
                   <span className="after">/per month</span>
                 </span>
                 <ul className="list-style-one">
-                  <li>Landing Page Design</li>
-                  <li>Web Development</li>
+                  <li>Initial Deposit: ₦15,000</li>
+                  <li>Buy Back Plan: ₦250K</li>
                   <li>SEO Optimizations</li>
-                  <li>Mobile Applications Design</li>
-                  <li>Quality Assurance</li>
-                  <li>Customs Services</li>
+                  <li>Design</li>
+                  <li>Domain</li>
+                  <li>Hosting</li>
+                  <li>Development</li>
+                  <li>Content</li>
                 </ul>
                 <Link legacyBehavior href="/pricing">
                   <a className="theme-btn w-100">

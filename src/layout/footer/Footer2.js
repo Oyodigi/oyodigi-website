@@ -52,38 +52,18 @@ const Footer2 = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/services">
-                      Services
+                    <Link legacyBehavior href="/blog">
+                      Blog
                     </Link>
                   </li>
+                  
                   <li>
                     <Link legacyBehavior href="/contact">
-                      <a>Career ?</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="/faqs">
-                      <a>FAQs</a>
+                      <a>Contact Us</a>
                     </Link>
                   </li>
                 </ul>
-                <ul className="list-style-two">
-                  <li>
-                    <Link legacyBehavior href="/about">
-                      Setting
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="/about">
-                      <a>Privacy Policy</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="/contact">
-                      Contact Us
-                    </Link>
-                  </li>
-                </ul>
+                
               </div>
             </div>
           </div>
@@ -98,7 +78,7 @@ const Footer2 = () => {
               <p>
                 Copyright @2023,{" "}
                 <Link legacyBehavior href="/">
-                  <a>Ygency</a>
+                  <a>OYODIGI</a>
                 </Link>{" "}
                 All Rights Reserved
               </p>
