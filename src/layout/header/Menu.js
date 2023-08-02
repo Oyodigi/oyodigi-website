@@ -21,7 +21,7 @@ const DaskTopMenu = () => {
   return (
     <ul className="navigation d-none d-lg-flex desktop-menu">
       <li >
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         
       </li>
       <li>
@@ -30,10 +30,10 @@ const DaskTopMenu = () => {
         </Link>
       </li>
       <li>
-        <a href="#">Blog</a>
+        <a href="blog">Blog</a>
       </li>
       <li>
-        <a href="#">Contact Us</a>
+        <a href="contact">Contact Us</a>
       </li>
     </ul>
   );
@@ -53,7 +53,7 @@ const MobileMenu = () => {
   return (
     <ul className="navigation d-block d-lg-none mobile-menu">
       <li className="dropdown">
-        <a href="#">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
         <Link legacyBehavior href="about">
@@ -61,11 +61,11 @@ const MobileMenu = () => {
         </Link>
       </li>
       <li className="dropdown">
-        <a href="#">blog</a>
+        <a href="blog">blog</a>
         
       </li>
       <li>
-        <a href="#">Contact Us</a>
+        <a href="contact">Contact Us</a>
       </li>
     </ul>
   );
@@ -75,7 +75,7 @@ const SingleMenu = () => {
   return (
     <ul className="navigation onepage clearfix">
       <li>
-        <a href="#home">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
         <a href="#about">about</a>

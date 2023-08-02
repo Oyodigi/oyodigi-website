@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <Layout>
       {/* Page Banner Start */}
-      <PageBanner pageName={"Blog Grid"} />
+      <PageBanner pageName={"Blog"} />
       {/* Page Banner End */}
       {/* Blog Page Area start */}
       <section className="blog-page-area py-130 rpy-100 rel z-1">
