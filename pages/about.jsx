@@ -19,7 +19,7 @@ const About = () => {
           <div className="row">
             <div className="col-xl-10 col-lg-11">
               <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-                We’re Digital Web
+                A Stunning Website
                 <img
                   className="mxw-20"
                   src="assets/images/banner/inside-title1.png"
@@ -30,7 +30,7 @@ const About = () => {
                   src="assets/images/banner/inside-title2.png"
                   alt="title"
                 />
-                Development Agency
+                Designed Just For You.
                 <span className="arrow">
                   <img
                     className="wow fadeInLeft delay-0-6s"
@@ -62,9 +62,10 @@ const About = () => {
           <div className="row">
             <div className="col-lg-6 wow fadeInLeft delay-0-2s">
               <div className="client-text text-lg-start text-center mt-40 pb-50">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptat
-                emey accusantium doloremque laudantium totam aperiam eaque
-                quabillo inventore veritatisey quasi architecto beatae dictasunt
+              Get ready to make a remarkable online presence with our bespoke website design starting from 
+              as low as ₦3,200 per month. And the best part? You can kickstart your online journey with just
+               a small initial deposit of ₦5,000.
+
               </div>
               <div className="row">
                 <div className="col-xl-10">
@@ -111,305 +112,8 @@ const About = () => {
         </div>
       </div>
       {/* Video Area end */}
-      {/* Who We Are start */}
-      <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
-        <div className="container container-1290">
-          <div className="row justify-content-center">
-            <div className="col-lg-7">
-              <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">Who We Are</span>
-                <h2>We are Professional and Experience Team </h2>
-              </div>
-            </div>
-          </div>
-          <div className="row gap-90">
-            <div className="col-lg-4 col-md-6">
-              <div className="why-choose-item style-two wow fadeInUp delay-0-2s">
-                <div className="why-choose-header">
-                  <i className="flaticon-creativity" />
-                  <h5>Customize your site</h5>
-                </div>
-                <p>
-                  At vero eos et accusamus iusto dignissim ducimuse blanditiis
-                  praesentiue
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="why-choose-item style-two wow fadeInUp delay-0-4s">
-                <div className="why-choose-header">
-                  <i className="flaticon-mobile-banking" />
-                  <h5>Edit your mobile view</h5>
-                </div>
-                <p>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="why-choose-item style-two wow fadeInUp delay-0-6s">
-                <div className="why-choose-header">
-                  <i className="flaticon-optimization-1" />
-                  <h5>Optimize search engines</h5>
-                </div>
-                <p>
-                  Quis autem vel eum iure reprehenderi qui ea voluptate velit
-                  esse quam nihile
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Who We Are end */}
-      {/* Headline area start */}
-      <div className="headline-area bgc-primary pt-80 pb-65">
-        <div className="container-fluid">
-          <div className="headline-wrap marquee">
-            <span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
-      {/* Headline Area end */}
-      {/* Team Area start */}
-      <section className="team-area pt-130 rpt-100">
-        <div className="container-fluid">
-          <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/team/member6.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Patrick V. Schroeder</h4>
-                  <span>UI/UX Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-3s">
-                <div className="image">
-                  <img src="assets/images/team/member7.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Michael A. Braun</h4>
-                  <span>UI/UX Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img src="assets/images/team/member8.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>James V. Decastro</h4>
-                  <span>Senior Marketer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-5s">
-                <div className="image">
-                  <img src="assets/images/team/member9.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Troy V. Richardson</h4>
-                  <span>Web Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img
-                    src="assets/images/team/member10.jpg"
-                    alt="Team Member"
-                  />
-                </div>
-                <div className="content">
-                  <h4>Michael A. Braun</h4>
-                  <span>Apps Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Team Area end */}
+     
+     
       {/* Statistics Area start */}
       <div
         className="statistics-area pt-100 rpt-70 rel z-1"
