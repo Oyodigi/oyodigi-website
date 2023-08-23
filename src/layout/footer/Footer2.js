@@ -29,10 +29,10 @@ const Footer2 = () => {
             <div className="footer-widget footer-text wow fadeInUp delay-0-4s">
               <h5 className="footer-title">Get In Touch</h5>
               <div className="text">
-                <p>55 Main Street, 2nd block Malborne, Australia</p>
-                <a href="mailto:support@gmail.com">support@gmail.com</a>
+                <p>Kings Estate, Asaba</p>
+                <a href="mailto:avedok.info@gmail.com">avedok.info@gmail.com</a>
                 <br />
-                <a href="callto:+000(123)45688">+000 (123) 456 88</a>
+                <a href="callto:+2348075608147">+234 (80) 475 608 147</a>
               </div>
             </div>
           </div>
