@@ -49,7 +49,9 @@ const Blog = ({blogs}) => {
         <div className="container container-1290">
           <div className="row">
             {blogs.length > 0 && (
-              <div className="col-xl-4 col-md-6">
+              <div>
+              {blogs.map((blog) => (
+              <div className="col-xl-4 col-md-6" key={blog.id}>
               <div className="blog-item wow fadeInUp delay-0-2s">
                 <div className="image">
                   <img src="assets/images/blog/blog1.jpg" alt="Blog" />
@@ -77,11 +79,13 @@ const Blog = ({blogs}) => {
                 </Link>
               </div>
             </div>
+            ))}
+</div>
             )}
             {!blogs.length > 0 && (<p className="text-black text-[20px] w-full text-center">No posts to show</p>)}
 
             
-           {/*} <div className="col-lg-12">
+           {/* <div className="col-lg-12">
               <ul className="pagination mt-10 flex-wrap justify-content-center wow fadeInUp delay-0-2s">
                 <li className="page-item disabled">
                   <span className="page-link">
