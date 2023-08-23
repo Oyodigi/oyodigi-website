@@ -417,7 +417,7 @@ const Index2 = () => {
                 <h5>Basic Plan</h5>
                 <span className="price-text">
                   <span className="before">₦</span>
-                  <span className="price">3,500</span>{" "}
+                  <span className="price">3,200</span>{" "}
                   <span className="after">/per month</span>
                 </span>
                 <ul className="list-style-one">
