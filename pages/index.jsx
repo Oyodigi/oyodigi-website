@@ -548,7 +548,8 @@ const Index2 = () => {
                 <div className="bottom-border" />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6"><div className="testimonial-one-right-part"> No Reviews Yet </div></div>
+           {/*<div className="col-lg-6">
               <div className="testimonial-one-right-part">
                 <Swiper
                   {...sliderProps.testimonialsActiveSwiper}
@@ -703,7 +704,7 @@ const Index2 = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </section>
@@ -719,7 +720,8 @@ const Index2 = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div> No Posts Yet </div>
+          {/*<div className="row">
             <div className="col-xl-4 col-md-6">
               <div className="blog-item style-two wow fadeInUp delay-0-2s">
                 <div className="image">
@@ -793,7 +795,7 @@ const Index2 = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </section>
       {/* Blog Style Two end */}
