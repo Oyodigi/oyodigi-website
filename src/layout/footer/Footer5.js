@@ -1,93 +1,90 @@
 const Footer5 = () => {
   return (
-    <footer className="main-footer footer-five pt-100">
-      <div className="container container-1290 pb-40">
-        <div className="row justify-content-between">
-          <div className="col-lg-4">
-            <div className="footer-widget footer-about wow fadeInUp delay-0-2s">
-              <div className="footer-logo mb-25">
-                <a href="index.html">
-                  <img src="assets/images/logos/logo.png" alt="Logo" />
-                </a>
-              </div>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error voluptatem
-                accusantium totam reme
-              </p>
+    <footer
+    className="main-footer footer-two pt-100 pb-50 rpb-20 rel z-1"
+    style={{
+      backgroundImage: "url(assets/images/footer/footer-bg-shape.png)",
+    }}
+  >
+    <div className="container container-1290">
+      <div className="row gp-100 pb-20 align-items-center justify-content-between">
+        <div className="col-xl-6 col-lg-7">
+          <div className="footer-left-title mb-35 wow fadeInLeft delay-0-2s">
+            Get Ready to Build Your Website
+          </div>
+        </div>
+        <div className="col-lg-5 col-sm-7 col-6 col-small wow fadeInRight delay-0-2s">
+          <div className="footer-right-btn mb-35 text-lg-end">
+            <Link legacyBehavior href="/contact">
+              <a className="explore-more text-start">
+                <i className="fas fa-arrow-right" />{" "}
+                <span>Send Us Message</span>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div className="col-lg-3 col-6 col-small order-lg-3">
+          <div className="footer-widget footer-text wow fadeInUp delay-0-4s">
+            <h5 className="footer-title">Get In Touch</h5>
+            <div className="text">
+              <p>Kings Estate, Asaba</p>
+              <a href="mailto:avedok.info@gmail.com">avedok.info@gmail.com</a>
+              <br />
+              <a href="callto:+2348075608147">+234 (80) 475 608 147</a>
             </div>
           </div>
-          <div className="col-xl-3 col-lg-4 col-md-6">
-            <div className="footer-widget footer-info wow fadeInUp delay-0-4s">
+        </div>
+        <div className="col-lg-3 order-lg-4 col-sm-6">
+          <div className="footer-widget footer-links wow fadeInUp delay-0-6s">
+            <h5 className="footer-title">Links</h5>
+            <div className="footer-widget widget_nav_menu">
               <ul className="list-style-two">
                 <li>
-                  <i className="far fa-envelope" />{" "}
-                  <a href="mailto:support@gmail.com">support@gmail.com</a>
+                  <Link legacyBehavior href="/">
+                    <a>Home</a>
+                  </Link>
                 </li>
                 <li>
-                  <i className="far fa-phone" />{" "}
-                  <a href="callto:+000(123)45688">+000 (123) 456 88</a>
+                  <Link legacyBehavior href="/about">
+                    <a>About</a>
+                  </Link>
                 </li>
                 <li>
-                  <i className="far fa-clock" />{" "}
-                  <span>Monday - Friday, 10am - 5pm</span>
+                  <Link legacyBehavior href="/blog">
+                    Blog
+                  </Link>
+                </li>
+                
+                <li>
+                  <Link legacyBehavior href="/contact">
+                    <a>Contact Us</a>
+                  </Link>
                 </li>
               </ul>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div className="footer-widget newsletter-widget wow fadeInUp delay-0-6s">
-              <form className="footer-newsletter" action="#">
-                <input type="email" placeholder="Email Address" required />
-                <button type="submit">
-                  <i className="fas fa-arrow-right" />
-                </button>
-              </form>
-              <div className="policy">
-                <input id="privacy-policy" type="checkbox" />
-                <label htmlFor="privacy-policy">
-                  I agree to the <a href="about.html">Privacy Policy</a>
-                </label>
-              </div>
+              
             </div>
           </div>
         </div>
-      </div>
-      <div className="copyright-area pt-25 pb-15">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="footer-copyright-text wow fadeInUp delay-0-2s">
-                <p>
-                  Copyright @2023, <a href="index.html">OYODIGI</a> All Rights
-                  Reserved
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="footer-bottom-menu text-lg-end wow fadeInRight delay-0-2s">
-                <ul>
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="about.html">About</a>
-                  </li>
-                  <li>
-                    <a href="services.html">Services</a>
-                  </li>
-                  <li>
-                    <a href="about.html">Career ?</a>
-                  </li>
-                  <li>
-                    <a href="faqs.html">Faqs</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div className="col-lg-5 me-auto order-lg-2 align-self-center">
+          <div className="footer-widget newsletter-widget wow fadeInUp delay-0-2s">
+            <form className="footer-newsletter" action="#">
+              <input type="email" placeholder="Email Address" required />
+              <button type="submit">
+                <i className="fas fa-arrow-right" />
+              </button>
+            </form>
+            <p>
+              Copyright @2023,{" "}
+              <Link legacyBehavior href="/">
+                <a>OYODIGI</a>
+              </Link>{" "}
+              All Rights Reserved
+            </p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   );
 };
 export default Footer5;
