@@ -2,6 +2,9 @@ import Layout from "@/src/layout/Layout";
 import React from "react";
 import Link from "next/link";
 import { GraphQLClient } from 'graphql-request';
+import { Accordion } from "react-bootstrap";
+import NavSearch from "@/src/layout/header/NavSearch";
+import Menu from "@/src/layout/header/Menu";
 
 const hygraph = new GraphQLClient(
   'https://api-us-west-2.hygraph.com/v2/cllnfv0aq2c7801t5ghfnbhi3/master'
@@ -47,6 +50,7 @@ export async function getStaticProps({params}) {
         email
         fullName
         message
+        createdAt
       }
     }
   }
@@ -89,7 +93,7 @@ export async function getStaticPaths(){
 }
 
 
-const BlogDetails = ({post}) => {
+const BlogDetails = ({post, singleMenu}) => {
   const postItem = post[0];
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
@@ -130,7 +134,102 @@ const BlogDetails = ({post}) => {
     }
   };
   return (
-    <Layout>
+    <div>
+       <header className="main-header menu-absolute">
+      {/*Header-Upper*/}
+      <div className="header-upper">
+        <div className="container container-1620 clearfix">
+          <div className="header-inner rpy-10 rel d-flex align-items-center">
+            <div className="logo-outer">
+              <div className="logo">
+                <Link legacyBehavior href="/">
+                  <a>
+                    <img
+                      src="../assets/images/logos/logo.png"
+                      alt="Logo"
+                      title="Logo"
+                    />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="nav-outer ms-lg-auto clearfix">
+              {/* Main Menu */}
+              <nav className="main-menu navbar-expand-lg">
+      <Accordion>
+        <div className="navbar-header py-10">
+          <div className="mobile-logo">
+            <Link legacyBehavior href="/">
+              <a>
+                <img
+                  src="../assets/images/logos/logo.png"
+                  alt="Logo"
+                  title="Logo"
+                />
+              </a>
+            </Link>
+          </div>
+          {/* Toggle Button */}
+          <Accordion.Toggle
+            as={"button"}
+            className="navbar-toggle"
+            eventKey="navbar-collapse"
+          >
+            <span className="icon-bar" />
+            <span className="icon-bar" />
+            <span className="icon-bar" />
+          </Accordion.Toggle>
+        </div>
+        <Accordion.Collapse
+          eventKey="navbar-collapse"
+          className="navbar-collapse clearfix"
+        >
+          <ul className="navigation d-none d-lg-flex desktop-menu">
+      <li >
+        <a href="/">Home</a>
+        
+      </li>
+      <li>
+        <Link legacyBehavior href="../about">
+          About Us
+        </Link>
+      </li>
+      <li>
+        <a href="../blog">Blog</a>
+      </li>
+      <li>
+        <a href="../contact">Contact Us</a>
+      </li>
+    </ul>
+ 
+        </Accordion.Collapse>
+      </Accordion>
+    </nav>              {/* Main Menu End*/}
+            </div>
+            {/* Nav Search */}
+            <NavSearch />
+            {/* Menu Button */}
+            <div className="menu-btns ms-lg-auto">
+              <Link legacyBehavior href="/">
+                <a className="theme-btn style-two me-4">
+                  Let’s Talk <i className="far fa-arrow-right" />
+                </a>
+              </Link>
+              {/* menu sidbar */}
+              <div className="menu-sidebar">
+                <button className="bg-transparent">
+                  <img
+                    src="../assets/images/icons/toggler-white.svg"
+                    alt="Toggler"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/*End Header Upper*/}
+    </header>
       {/* Page Banner Start */}
       <section
         className="page-banner-area overlay pt-250 pb-50 rel z-1 bgs-cover"
@@ -145,7 +244,7 @@ const BlogDetails = ({post}) => {
                 <ul className="blog-meta mb-15 wow fadeInUp delay-0-2s">
                   <li>
                     <i className="fal fa-user-alt" />
-                    <a href="#">Richard N. Dixon</a>
+                    <a href="#">{postItem.author.name}</a>
                   </li>
                   <li>
                     <i className="far fa-calendar-alt" />
@@ -221,86 +320,37 @@ const BlogDetails = ({post}) => {
               </div>
               
               <h3 className="comment-title mb-50">Popular Comments</h3>
-              <div className="comments">
-                <div className="comment-body wow fadeInUp delay-0-2s">
+              {postItem.comments.length > 0 && (
+                <div className="comments">
+                  {postItem.comments.map((comment) => (
+                    <div className="comment-body wow fadeInUp delay-0-2s">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/blog/comment-author1.jpg"
+                      src="../assets/images/blog/comment-author1.jpg"
                       alt="Author"
                     />
                   </div>
                   <div className="content">
                     <ul className="blog-meta">
                       <li>
-                        <h6>William L. Jackson</h6>
+                        <h6>{comment.fullName}</h6>
                       </li>
                       <li>
-                        <a href="#">February 25, 2023</a>
+                        <a href="#">{comment.createdAt}</a>
                       </li>
                     </ul>
                     <p>
-                      Quis autem vel eum iure reprehenderit qui in ea voluptate
-                      velit esse quam nihile molestiae consequatur, vel illum
-                      qui dolorem eum fugiat voluptas
-                    </p>
+                      {comment.message}
+                      </p>
                     <a className="read-more" href="#">
                       Reply <i className="far fa-arrow-right" />
                     </a>
                   </div>
                 </div>
-                <div className="comment-body comment-child wow fadeInUp delay-0-2s">
-                  <div className="author-thumb">
-                    <img
-                      src="assets/images/blog/comment-author2.jpg"
-                      alt="Author"
-                    />
-                  </div>
-                  <div className="content">
-                    <ul className="blog-meta">
-                      <li>
-                        <h6>James M. Stovall</h6>
-                      </li>
-                      <li>
-                        <a href="#">February 25, 2023</a>
-                      </li>
-                    </ul>
-                    <p>
-                      At vero eos et accusamus et iusto dignissimos ducimus
-                      blanditiis sapiente praesentium voluptatum deleniti atque
-                      corrupti quos dolores
-                    </p>
-                    <a className="read-more" href="#">
-                      Reply <i className="far fa-arrow-right" />
-                    </a>
-                  </div>
-                </div>
-                <div className="comment-body wow fadeInUp delay-0-2s">
-                  <div className="author-thumb">
-                    <img
-                      src="assets/images/blog/comment-author3.jpg"
-                      alt="Author"
-                    />
-                  </div>
-                  <div className="content">
-                    <ul className="blog-meta">
-                      <li>
-                        <h6>Lee M. Moreno</h6>
-                      </li>
-                      <li>
-                        <a href="#">February 25, 2023</a>
-                      </li>
-                    </ul>
-                    <p>
-                      Ut enim ad minima veniam, quis nostrum exercitationem
-                      ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                      commodi consequatur
-                    </p>
-                    <a className="read-more" href="#">
-                      Reply <i className="far fa-arrow-right" />
-                    </a>
-                  </div>
-                </div>
+                  ))}
               </div>
+              )}
+              {!postItem.comments.length > 0 && (<p className="text-black text-[20px] w-full text-center">No comments to show</p>)}
               <form
                 id="comment-form"
                 className="comment-form bgc-lighter mt-95 wow fadeInUp delay-0-2s"
@@ -309,10 +359,7 @@ const BlogDetails = ({post}) => {
                 method="post"
               >
                 <h4>Leave a Reply</h4>
-                <p>
-                  we denounce with righteous indignation and dislike men who
-                  beguiled
-                </p>
+                
                 <div className="row mt-30">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -380,7 +427,7 @@ const BlogDetails = ({post}) => {
       </section>
       {/* Blog Details Page Area end */}
       {/* footer area start */}
-    </Layout>
+      </div>
   );
 };
 export default BlogDetails;
