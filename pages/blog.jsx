@@ -14,6 +14,7 @@ const QUERY = gql`
     blogs {
       createdAt
       id
+      slug
       publishedAt
       publishedOn
       title
@@ -29,16 +30,18 @@ const QUERY = gql`
 `
 
 export async function getStaticProps() {
-  const { blogs } = await hygraph.request(QUERY)
+  const { blogs, comments } = await hygraph.request(QUERY)
 
   return {
     props: {
-      blogs
+      blogs,
+      comments
     }
   }
 }
 
-const Blog = ({blogs}) => {
+const Blog = ({blogs, comments}) => {
+  
   return (
     <Layout>
       {/* Page Banner Start */}
@@ -54,25 +57,25 @@ const Blog = ({blogs}) => {
               <div className="col-xl-4 col-md-6" key={blog.id}>
               <div className="blog-item wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/blog/blog1.jpg" alt="Blog" />
+                  <img src={blog.previewImage.url} alt="Blog" />
                 </div>
                 <ul className="blog-meta">
                   <li>
                     <i className="far fa-calendar-alt" />
-                    <a href="#">February 18, 2023</a>
+                    <a href="#">{blog.publishedOn}</a>
                   </li>
                   <li>
                     <i className="far fa-comments" />
-                    <a href="#">Comment (5)</a>
+                    <a href="#">Comment ({comments.length})</a>
                   </li>
                 </ul>
                 <hr />
                 <h4>
-                  <Link legacyBehavior href="/blog-details">
-                    <a>Voice Skills For Google Assistant And Amazon Alexa</a>
+                  <Link legacyBehavior href={`/post/${blog.slug}`}>
+                    <a>{blog.title}</a>
                   </Link>
                 </h4>
-                <Link legacyBehavior href="/blog-details">
+                <Link legacyBehavior href={`/post/${blog.slug}`}>
                   <a className="read-more">
                     Read More <i className="far fa-arrow-right" />
                   </a>
