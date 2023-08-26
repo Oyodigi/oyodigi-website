@@ -8,7 +8,7 @@ const hygraph = new GraphQLClient(
 );
 
 import { gql } from 'graphql-request';
-
+export const getPosts = async () => {
 const QUERY = gql`
   {
     blogs {
@@ -28,14 +28,15 @@ const QUERY = gql`
     }
   }
 `
-
+const post = await hygraph.request(QUERY)
+return post;
+}
 export async function getStaticProps() {
-  const { blogs, comments } = await hygraph.request(QUERY)
-
+  const data = await getPosts();
   return {
     props: {
-      blogs,
-      comments
+      blogs: data.blogs,
+      comments: data.comments
     }
   }
 }
