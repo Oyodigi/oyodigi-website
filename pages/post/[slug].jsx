@@ -45,6 +45,9 @@ export async function getStaticProps({params}) {
         linkedInLink
         twitterLink
         bio
+        image {
+          url
+        }
       }
       comments {
         email
@@ -289,7 +292,7 @@ const BlogDetails = ({post, singleMenu}) => {
                 <div className="comment-body">
                   <div className="author-thumb">
                     <img
-                      src="assets/images/blog/admin-author.jpg"
+                      src={postItem.author.image.url}
                       alt="Author"
                     />
                   </div>
