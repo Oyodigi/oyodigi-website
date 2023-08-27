@@ -6,6 +6,7 @@ import { Accordion } from "react-bootstrap";
 import NavSearch from "@/src/layout/header/NavSearch";
 import Menu from "@/src/layout/header/Menu";
 
+
 const hygraph = new GraphQLClient(
   'https://api-us-west-2.hygraph.com/v2/cllnfv0aq2c7801t5ghfnbhi3/master'
 );
